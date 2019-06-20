@@ -50,6 +50,7 @@ def clean_text(text):
     return text
 
 
+
 df['post'] = df['post'].apply(clean_text)
 print_plot(10)
 
@@ -82,6 +83,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.preprocessing import text, sequence
 from keras import utils
+
 
 train_size = int(len(df) * .7)
 print ("Train size: %d" % train_size)
